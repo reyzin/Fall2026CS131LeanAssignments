@@ -1,3 +1,4 @@
+import AutograderLib
 import Mathlib.Basic.Logic.Basic
 
 -- This file contains problems for Problem Set 2 for CS131
@@ -83,7 +84,7 @@ theorem not_or_self_iff (p: Prop): ¬p ∨ p ↔ True:= by
 -- This problem is worth 10 points
 -- You may use rewrite (or nth_rewrite) with the theorems listed above
 -- and rfl ONLY for this proof
---@[autogradedProof 10]
+@[autogradedProof 10]
 theorem problem_5c (a b c : Prop) : ((a → (¬ b ∨ ¬ c)) ∧ c) = (¬ (a ∧ b) ∧ c) := by
   sorry
 
@@ -93,6 +94,6 @@ theorem problem_5c (a b c : Prop) : ((a → (¬ b ∨ ¬ c)) ∧ c) = (¬ (a ∧
 -- *** You must begin your proof with intro ***
 -- In addition to the tactics allowed in the previous
 -- problem, you may use intro, obtain, and exact for this proof
---@[autogradedProof 10]
+@[autogradedProof 10]
 theorem problem_5d (p q: Prop): ((p→q) ∧ p) → q := by
   sorry
